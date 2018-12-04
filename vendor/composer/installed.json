@@ -1,0 +1,28 @@
+[
+    {
+        "name": "wowza/wse-rest-library-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/WowzaMediaSystems/wse-rest-library-php.git",
+            "reference": "c8a6e3177c04d320e05f07269a82bfdff277dec3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/WowzaMediaSystems/wse-rest-library-php/zipball/c8a6e3177c04d320e05f07269a82bfdff277dec3",
+            "reference": "c8a6e3177c04d320e05f07269a82bfdff277dec3",
+            "shasum": ""
+        },
+        "time": "2018-05-16T17:28:36+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Com\\Wowza\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "homepage": "https://www.wowza.com"
+    }
+]
