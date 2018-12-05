@@ -1,8 +1,7 @@
+
+
 <?php
-
-
-// This is for a framework if you use one.
-
+// config.php
 define("WOWZA_HOST","http://18.218.195.129:1935");
 define("WOWZA_SERVER_INSTANCE", "_defaultServer_");
 define("WOWZA_VHOST_INSTANCE", "_defaultVHost_");
@@ -17,9 +16,17 @@ $setup->setHost("http://18.218.195.129:1935");
 $setup->setUsername("fitfistream");
 $setup->setPassword("Toronto123");
 
-
 // Connect to the server or deal with statistics NOTICE THE CAPS IN COM AND WOWZA
+$server = new Com\Wowza\Server($setup);
+$sf = new Com\Wowza\Statistics($setup);
+$response = $sf->getServerStatistics($server);
+var_dump($response);
 
+// $sf = new Com\Wowza\StreamFile($setup);
+// $response = $sf->getAll();
+// var_dump($response);
+// var_dump($response);
+//  $sf =new Com\Wowza\StreamFile("live","MyStream");
+// $response = $sf->get();
+// var_dump($response);
 
-
-?>
